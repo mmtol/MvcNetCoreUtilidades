@@ -1,0 +1,17 @@
+﻿<h1>Cifrado eficiente</h1>
+
+<form method="post">
+    <label>Password</label>
+    <br />
+    <input type="text" name="contenido" />
+    <hr />
+    <label>Resultado cifrado: </label>
+    <br />
+    <textarea rows="5" name="resultado">@ViewData["Cifrado"]</textarea>
+    <hr />
+    <button name="accion" value="cifrar">Cifrar</button>
+    <button name="accion" value="comparar">Comparar</button>
+</form>
+
+<h2>@ViewData["Salt"]</h2>
+<h2>@ViewData["Comparacion"]</h2>
